@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NovitusApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            
+            <Frame CornerRadius="20" Padding="20" HasShadow="True">
+                <VerticalStackLayout HorizontalOptions="Center">
+                    <Image
+                    Source="novitus_logo.png"
+                    HeightRequest="120"
+                    Aspect="AspectFit" />
+                </VerticalStackLayout>
+            </Frame>
+
+            
+            <Label
+            Text="Informacje o urządzeniu"
+            FontSize="22"
+            FontAttributes="Bold"
+            HorizontalOptions="Center" />
+
+            
+            <Frame CornerRadius="20" Padding="20" HasShadow="True">
+                <VerticalStackLayout Spacing="12">
+
+                    <Label x:Name="ProducerLabel" FontSize="16" />
+                    <Label x:Name="ModelLabel" FontSize="16" />
+                    <Label x:Name="RamLabel" FontSize="16" />
+                    <Label x:Name="StorageLabel" FontSize="16" />
+                    <Label x:Name="SerialLabel" FontSize="16" />
+                    <Label x:Name="DeviceIdLabel" FontSize="16" />
+
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
